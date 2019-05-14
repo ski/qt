@@ -1,77 +1,101 @@
-.App {
-  text-align: center;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* c display / screen / subscreen */ 
 .c21 {
-  background-color: #ebb2cf;
+    color: #ebb2cf;
+    background: url("images/c21.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: auto 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .c31 {
   background-color: #d9df22;
 }
 
-.c221 {
-  background-color: #4d0208;
+.c22 {
+    background: url("images/c22.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: auto 100%;
+    height: 100%;
+    width: 100%;
 }
 
-.c222 {
-  background-color: #e67ae4;
-}
-
-.c223 {
-  background-color: #7aa238;
-}
-
-.c224 {
-  background-color:#022be7;
-}
-
-.c225 {
-  background-color: #012197;
-}
-
-.c226 {
-  background-color: #a254a6;
-}
 
 .c32 {
   background-color: #714fed;
 }
 
+
 .c23 {
   background-color: #c1bf88;
+  background: url("images/c23.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
 }
+
+.c24 {
+  background-color: #c1bf88;
+  background: url("images/c24.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c25 {
+  background-color: #c1bf88;
+  background: url("images/c25.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c26 {
+  background-color: #c1bf88;
+  background: url("images/c26.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c331 {
   background-color: #5559e7;
@@ -165,6 +189,78 @@
 
 
 
-body {
-  /* background-color: black !important; */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
+
+/* body{
+    font-family: 'Exo', sans-serif;
+} */
+
+
+#buttons {
+ 
+  width: 300px;
+  position: absolute;
+  left: 3.5%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+   top: 60%;
+  }
+
+  #buttonss {
+
+    width: 300px;
+    position: absolute;
+    left: 3.5%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+     top: 70%;
+      }
+
+  #buttons li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    margin-right: 30px;
+    /* width: 350px; */
+    line-height: 60px;
+    font-weight: 500;
+    font-size: 120%
+  }
+
+  #buttons li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+  }
+
+  #buttonss li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    margin-right: 30px;
+    line-height: 60px;
+    font-weight: 500;
+    font-size: 120%
+
+  }
+
+  #buttonss li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+  }
+
+  #selected {
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 2px; 
+  }
