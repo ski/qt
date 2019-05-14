@@ -9,6 +9,7 @@ import Frames from './Frames';
 import Review from "./Review";
 
 class App extends Component {
+  
   constructor() {
     super();
     this.state = {
@@ -20,6 +21,7 @@ class App extends Component {
       endpoint: "http://127.0.0.1:3002"
     };
   }
+
   componentDidMount() {
     const { endpoint } = this.state;
     const socket = socketIOClient(endpoint);

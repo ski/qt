@@ -57,10 +57,8 @@ class Verses extends Component {
 
     list = (lang, verse) => {
         const verses = this.makeVerses()[lang];
-        console.log(this.makeVerses());
         let content = [];
-        for (let i = 0; i < verses.length; i++) {
-            
+        for (let i = 0; i < verses.length; i++) {            
             if(verse == i){                
                 content.push(<li id='selected'>{verses[i]}</li>);
             } else {
@@ -71,17 +69,10 @@ class Verses extends Component {
     }
 
     render() {
-        console.log(this.props.lang);
-        console.log(this.props.verse);
         return(
         <div>
             <ul id='verses'>
-                {this.list(this.props.lang, this.props.verse)}
-                {/* <li>And made you peoples and tribes that you may know one another. Indeed, the most noble of you in the sight of Allah is the most righteous of you.</li>
-                <li id='selected'>And not equal are the good deed and the bad. Repel [evil] by that [deed] which is better.</li>
-                <li>And do good; indeed, Allah loves the doers of good.</li>
-                <li>So turn aside from them and say, "Peace."</li>
-                <li>There shall be no compulsion in [acceptance of] the religion.</li> */}
+                {this.list(this.props.lang, this.props.verse)}                
             </ul> 
         </div>);
     }

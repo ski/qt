@@ -1,0 +1,102 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.c31 {
+  background: url("images/c31.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c32 {
+  background: url("images/c32.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c33 {
+  background: url("images/c33.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c34 {
+  background: url("images/c34.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c35 {
+  background: url("images/c35.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c36 {
+  background: url("images/c36.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+
+#verses {
+  width: 300px;
+  position: absolute;
+  left: 3.5%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 35%;
+}
+
+#verses li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: #000000;
+  margin-right: 30px;  
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 120%;
+  padding-bottom: 20px;
+  color: #40DAFF;
+  width: 100%;
+}
+
+#original {
+  direction: rtl;
+}

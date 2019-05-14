@@ -9,7 +9,6 @@ app.use(bodyParser.json());
 var routes = require('./api/routes/routes'); //importing route
 routes(app); //register the route
 
-
 app.listen(port);
 
 console.log('display 1 server started on: ' + port);
