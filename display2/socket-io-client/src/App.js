@@ -35,12 +35,12 @@ class App extends Component {
 
     socket.on('four', function(data){
       console.log(data);
-      t.setState({ ttwo: data.dtwo});
+      t.setState({ ttwo: data.dtwo,esel: data.esel});
     });
 
     socket.on('five', function(data){
       console.log(data);
-      t.setState({ ttwo: data.dtwo});
+      t.setState({ ttwo: data.dtwo,esel: data.esel});
     });
 
     socket.on('six', function(data){
@@ -60,9 +60,9 @@ class App extends Component {
           case 'c23':
             return <Verses lang={elang} verse={everse}/>;              
           case 'c24':
-            return <Fonts sel={esel}/>;   
+            return <Fonts esel={esel}/>;   
           case 'c25':
-            return <Frames sel={esel}/>; 
+            return <Frames esel={esel}/>; 
           case 'c26':
             return <Review />; 
           default:

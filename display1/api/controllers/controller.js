@@ -24,7 +24,8 @@ exports.one = function (req, res) {
     });
 };
 
-http://localhost:3003/sync?two=c22&three=c31&sel=5
+//languages
+//http://localhost:3003/sync?two=c22&three=c31&sel=5
 exports.two = function (req, res) {
     console.log(req.query.two);
     console.log(req.query.three);
@@ -35,35 +36,32 @@ exports.two = function (req, res) {
     });
 };
 
+//verses
 //http://localhost:3003/three?two=c23&three=c31&lang=2&verse=3
 exports.three = function (req, res) {
-    console.log(req.query.two);
-    console.log(req.query.three);
-    console.log(req.query.lang);
-    console.log(req.query.verse);    
     client.get("http://localhost:3002/three?two=" + req.query.two + '&lang=' + req.query.lang + '&verse=' + req.query.verse, function (data, response) {
         res.status(200).send('pingpong');
     });
 };
 
-//http://localhost:3003/four?two=c24
+//fonts
+http://localhost:3003/four?two=c24&sel=3
 exports.four = function (req, res) {
-    console.log(req.query.two);
     // res.status(200).send('pingpong');
-    client.get("http://localhost:3002/four?two=" + req.query.two, function (data, response) {
+    client.get("http://localhost:3002/four?two=" + req.query.two + '&sel=' + req.query.sel, function (data, response) {
         res.status(200).send('pingpong');
     });
 };
 
-//http://localhost:3003/five?two=c25
+//frames
+//http://localhost:3003/five?two=c25&sel=0
 exports.five = function (req, res) {
-    console.log(req.query.two);
-    console.log(req.query.sel);
     client.get("http://localhost:3002/five?two=" + req.query.two + '&sel=' + req.query.sel, function (data, response) {
         res.status(200).send('pingpong');
     });
 };
 
+//review
 //http://localhost:3003/six?two=c26
 exports.six = function (req, res) {
     console.log(req.query.two);

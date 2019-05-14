@@ -3,10 +3,6 @@ import './App.css';
 
 class Languages extends Component {
 
-    // constructor(props) {
-    //     super(props);
-    // }
-
     render() {
         const {esel} = this.props;
         

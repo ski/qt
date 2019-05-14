@@ -8,24 +8,45 @@ import v3 from "./images/v3.png";
 
 class Fonts extends Component {
 
+    rone = (sel) => {        
+        let row = [];
+        let one = [{v0}, {v1}];
+        for (let i = 0; i < one.length; i++) {
+            if(sel == i){                
+                row.push(<img id='selected' src={one[i]['v'+i]} />);
+            } else {
+                row.push(<img src={one[i]['v'+i]} />);
+            }
+        }
+        return row;
+    }
+
+    rtwo = (sel) => {
+        let row = [];
+        let one = [{v2}, {v3}];
+        console.log(one); 
+        for (let i = 2; i < 4; i++) {  
+            console.log(i); 
+            if(sel == i){                
+                row.push(<img id='selected' src={one[i-2]['v'+i]} />);
+            } else {
+                row.push(<img src={one[i-2]['v'+i]} />);
+            }
+        }
+        return row;
+    }
+
     render() {
+        const {esel} = this.props;
+        
         return(<div className="row">
             <div className="column">
-                <img src={v0} />
-                <img id='selected' src={v1} />
+                {this.rone(esel)}
             </div>
             <div className="column">
-                <img src={v2} />
-                <img src={v3} />
+                {this.rtwo(esel)}
             </div>
-        </div>
-    //     <ul id='fonts'>
-    // <li><img src={v0} /></li>
-    // <li><img src={v1} /></li>
-    // <li><img src={v2} /></li>
-    // <li><img src={v3} /></li>
-    // </ul>
-    // </div>
+        </div>    
     );
     }
 }

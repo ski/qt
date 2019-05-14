@@ -10,42 +10,30 @@ let event;
 
 app.get('/to', (req, res) => {
     res.status(200).send('pingpong');
-    payload = true;
-    if(req.query.sel){
-        sel = req.query.sel;
-    }
+    payload = true;    
     event = 'to';
     msg = {dtwo : req.query.two, esel : req.query.sel};
 });
 
 app.get('/three', (req, res) => {
     res.status(200).send('pingpong');
-    payload = true;
-    if(req.query.sel){
-        sel = req.query.sel;
-    }
+    payload = true;   
     event = 'three';
     msg = {dtwo : req.query.two, elang : req.query.lang, everse : req.query.verse};
 });
 
 app.get('/four', (req, res) => {
     res.status(200).send('pingpong');
-    payload = true;
-    if(req.query.sel){
-        sel = req.query.sel;
-    }
+    payload = true;   
     event = 'four';
-    msg = {dtwo : req.query.two};
+    msg = {dtwo : req.query.two, esel : req.query.sel};
 });
 
 app.get('/five', (req, res) => {
     res.status(200).send('pingpong');
-    payload = true;
-    if(req.query.sel){
-        sel = req.query.sel;
-    }
+    payload = true;    
     event = 'five';
-    msg = {dtwo : req.query.two};
+    msg = {dtwo : req.query.two, esel : req.query.sel};
 });
 
 app.get('/six', (req, res) => {
