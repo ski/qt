@@ -5,23 +5,60 @@ var io = require('socket.io')(http);
 let payload;
 let two;
 let sel;
+let msg;
+let event;
+
 app.get('/to', (req, res) => {
-    console.log(req.query.two);
-    console.log(req.query.sel);
     res.status(200).send('pingpong');
     payload = true;
-    two = req.query.two
     if(req.query.sel){
         sel = req.query.sel;
     }
+    event = 'to';
+    msg = {dtwo : req.query.two, esel : req.query.sel};
+});
+
+app.get('/three', (req, res) => {
+    res.status(200).send('pingpong');
+    payload = true;
+    if(req.query.sel){
+        sel = req.query.sel;
+    }
+    event = 'three';
+    msg = {dtwo : req.query.two, elang : req.query.lang, everse : req.query.verse};
+});
+
+app.get('/four', (req, res) => {
+    res.status(200).send('pingpong');
+    payload = true;
+    if(req.query.sel){
+        sel = req.query.sel;
+    }
+    event = 'four';
+    msg = {dtwo : req.query.two};
+});
+
+app.get('/five', (req, res) => {
+    res.status(200).send('pingpong');
+    payload = true;
+    if(req.query.sel){
+        sel = req.query.sel;
+    }
+    event = 'five';
+    msg = {dtwo : req.query.two};
+});
+
+app.get('/six', (req, res) => {
+    res.status(200).send('pingpong');
+    payload = true;    
+    event = 'six';
+    msg = {dtwo : req.query.two};
 });
 
 const update = async socket => {
     try {
         if (payload) {
-            var random = Math.random() * (100 - 1) + 1
-            var msg = {dtwo : two, esel : sel};
-            io.emit("to", msg); // Emitting a new message. It will be consumed by the client
+            io.emit(event, msg); // Emitting a new message. It will be consumed by the client
             payload = false;
         }
     } catch (error) {

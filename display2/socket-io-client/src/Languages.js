@@ -8,15 +8,15 @@ class Languages extends Component {
     // }
 
     render() {
-        const {sel} = this.props;
+        const {esel} = this.props;
         
         return(
             <div>
             <ul id="buttons">
-                {this.rone(sel)}
+                {this.rone(esel)}
             </ul>
             <ul id="buttonss">
-                {this.rtwo(sel)}
+                {this.rtwo(esel)}
             </ul>            
             </div>            
         );
@@ -38,9 +38,7 @@ class Languages extends Component {
     rtwo = (sel) =>{
         let rowtwo = [];
         let two = ["English", "Français", "中文",'हिन्दी', 'Español', 'русский'];
-
         for (let i = 3; i < 6; i++) {
-            console.log(sel == i);
             if(sel == i){                
                 rowtwo.push(<li id='selected'><a href="#">{two[i]}</a></li>);
             } else {

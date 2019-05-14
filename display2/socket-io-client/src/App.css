@@ -213,7 +213,6 @@ body, html {
   }
 
   #buttonss {
-
     width: 300px;
     position: absolute;
     left: 3.5%;
@@ -221,7 +220,7 @@ body, html {
     margin-left: auto;
     margin-right: auto;
      top: 70%;
-      }
+}
 
   #buttons li {
     float: left;
@@ -245,7 +244,7 @@ body, html {
     float: left;
     list-style: none;
     text-align: center;
-    background-color: #000000;
+    background-color: #000000;    
     margin-right: 30px;
     line-height: 60px;
     font-weight: 500;
@@ -262,5 +261,103 @@ body, html {
   #selected {
     border-radius: 5px;
     border: 2px solid #73AD21;
-    padding: 2px; 
+    padding: 3px; 
+    padding-left: 5px;
+    /* padding-left: 10px; */
   }
+
+  #verses {
+    width: 300px;
+    position: absolute;
+    left: 3.5%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+     top: 29%;
+}
+
+#verses li{
+  float: left;
+    list-style: none;
+    background-color: #000000;    
+    margin-right: 10px;
+    text-align: left;
+   color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.row {
+  
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+   top: 30%;
+
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+}
+
+#row #column img{
+  list-style: none;
+  background-color: #000000;    
+  margin-right: 10px;
+  text-align: left;
+ color: #FFFFFF;
+  padding-bottom: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+#review {
+  list-style-type: none;
+  width: 300px;
+    position: absolute;
+    left: 3.5%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+     top: 29%;
+  /* width: 500px; */
+}
+
+h3 svg{  
+  color: wheat;
+  font-size: 50px;
+}
+
+h3 {
+  color: wheat;
+}
+ 
+#review li h3 svg {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+ul#review li p {
+  color: wheat;
+}
+
+/* #verses li::before {
+  content: "•"; 
+  color: #c1bf88;
+  font-size: 30px;
+  display: inline-block; 
+  vertical-align: text-bottom;
+  margin-left: -0.5em;
+  top: 10px;
+} */

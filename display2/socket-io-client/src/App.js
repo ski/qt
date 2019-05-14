@@ -3,6 +3,10 @@ import React, { Component } from "react";
 import socketIOClient from "socket.io-client";
 import './App.css';
 import Languages from './Languages';
+import Verses from './Verses';
+import Fonts from './Fonts';
+import Frames from './Frames';
+import Review from "./Review";
 
 class App extends Component {
   constructor() {
@@ -11,6 +15,8 @@ class App extends Component {
       response: {two:'c21', sel: 0},
       ttwo: 'c21',
       esel : '0',
+      elang: 4,
+      everse: 2,
       endpoint: "http://127.0.0.1:3002"
     };
   }
@@ -20,40 +26,50 @@ class App extends Component {
     var t = this;
     socket.on('to', function(data){
       t.setState({ ttwo: data.dtwo, esel: data.esel });
-      console.log(data);
-      console.log(t.state);
     });
-    //socket.on("to", data => this.setState({ two: data.dtwo, sel: data.esel }));
+
+    socket.on('three', function(data){
+      console.log(data);
+      t.setState({ ttwo: data.dtwo, elang: data.elang, everse: data.everse });
+    });
+
+    socket.on('four', function(data){
+      console.log(data);
+      t.setState({ ttwo: data.dtwo});
+    });
+
+    socket.on('five', function(data){
+      console.log(data);
+      t.setState({ ttwo: data.dtwo});
+    });
+
+    socket.on('six', function(data){
+      console.log(data);
+      t.setState({ ttwo: data.dtwo});
+    });
   }
 
   render() {
-    // console.log(this.state.response);
-    const { ttwo, esel } = this.state;
-    
-    console.log(this.state);
-    return (
-      <div className={ttwo} style={{ textAlign: "center" }}>       
-      <div className="area" ></div>   
-    {ttwo == 'c22' ? <Languages sel={esel}/> : <h2>Loading {ttwo}</h2>}     
-    {/* <ul id="buttons">
-  <li><a href="#">English</a></li>
-  <li id='selected'><a href="#">Français</a></li>
-  <li ><a href="#">中文</a></li>
-</ul>   
-<ul id="buttonss">
-  
-  <li><a href="#">हिन्दी</a></li>
-  <li><a href="#">Español</a></li>
-  <li><a href="#">русский</a></li>
-
-</ul>    */}
-          {/* {response
-          ? <div>
-            The temperature in Florence is: {response} °F
-            
-              </div>
-          : <div>Loading...</div>} */}
-      </div>
+    const { ttwo, esel, elang, everse } = this.state;    
+    return (    
+    <div className={ttwo}>
+      {(function() {
+        switch(ttwo) {
+          case 'c22':
+            return <Languages esel={esel}/>;
+          case 'c23':
+            return <Verses lang={elang} verse={everse}/>;              
+          case 'c24':
+            return <Fonts sel={esel}/>;   
+          case 'c25':
+            return <Frames sel={esel}/>; 
+          case 'c26':
+            return <Review />; 
+          default:
+            return <h2>Loading {ttwo}</h2>;
+        }
+      })()}
+    </div>    
     );
   }
 }
