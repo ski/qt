@@ -30,6 +30,8 @@ class App extends Component {
       t.setState({ ttwo: data.dtwo, esel: data.esel });
     });
 
+    
+
     socket.on('three', function(data){
       console.log(data);
       t.setState({ ttwo: data.dtwo, elang: data.elang, everse: data.everse });
