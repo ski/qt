@@ -9,7 +9,7 @@ import Frames from './Frames';
 import Review from "./Review";
 
 class App extends Component {
-  
+
   constructor() {
     super();
     this.state = {
@@ -18,7 +18,7 @@ class App extends Component {
       esel : '0',
       elang: 4,
       everse: 2,
-      endpoint: "http://127.0.0.1:3002"
+      endpoint: "http://localhost:3002"
     };
   }
 
