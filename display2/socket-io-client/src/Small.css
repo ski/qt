@@ -1,0 +1,43 @@
+#buttons {
+    width: 300px;
+    position: absolute;
+    left: 3.5%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+     top: 60%;
+  }
+  
+    #buttonss {
+      width: 300px;
+      position: absolute;
+      left: 3.5%;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+       top: 70%;
+  }
+  
+  #buttons li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    margin-right: 30px;
+    /* width: 350px; */
+    line-height: 60px;
+    font-weight: 500;
+    font-size: 120%
+  }
+  
+  #buttonss li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;    
+    margin-right: 30px;
+    line-height: 60px;
+    font-weight: 500;
+    font-size: 120%
+  }
+  

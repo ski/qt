@@ -55,7 +55,7 @@ class Verses extends Component {
         return verses;
     }
 
-    list = (lang, verse) => {
+    list = (lang, verse) => {        
         const verses = this.makeVerses()[lang];
         let content = [];
         for (let i = 0; i < verses.length; i++) {            

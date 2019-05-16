@@ -18,10 +18,6 @@ body, html {
     width: 100%;
 }
 
-.c31 {
-  background-color: #d9df22;
-}
-
 .c22 {
     background: url("images/c22.png");
     background-repeat: no-repeat;
@@ -31,12 +27,6 @@ body, html {
     height: 100%;
     width: 100%;
 }
-
-
-.c32 {
-  background-color: #714fed;
-}
-
 
 .c23 {
   background-color: #c1bf88;
@@ -82,128 +72,14 @@ body, html {
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.c331 {
-  background-color: #5559e7;
-}
-
-.c332 {
-  background-color: #b969a9;
-}
-
-.c333 {
-  background-color: #c13cc5;
-}
-
-.c334 {
-  background-color: #c13cc5;
-}
-
-.c335 {
-  background-color: #98886d;
-}
-
-.c241 {
-  background-color: #fe1ff3;
-}
-
-.c242 {
-  background-color: #48850b;
-}
-
-.c243 {
-  background-color: #0dd790;
-}
-
-.c244 {
-  background-color: #21ade2;
-}
-
-.c341 {
-  background-color: #fe1ff3;
-}
-
-.c342 {
-  background-color: #48850b;
-}
-
-.c343 {
-  background-color: #0dd790;
-}
-
-.c344 {
-  background-color: #21ade2;
-}
-
-.c251 {
-  background-color: #5841bf;
-}
-
-.c252 {
-  background-color: #5841bf;
-}
-
-.c253 {
-  background-color: #bc15f9;
-}
-
-.c254 {
-  background-color: #138aa7;
-}
-
-.c351 {
-  background-color: #5841bf;
-}
-
-.c352 {
-  background-color: #5841bf;
-}
-
-.c353 {
-  background-color: #bc15f9;
-}
-
-.c354 {
-  background-color: #138aa7;
-}
-
-.c261 {
-  background-color: #cb1323;
-}
-
-
-
-
-
-
-
 *{
     margin: 0px;
     padding: 0px;
 }
 
-/* body{
-    font-family: 'Exo', sans-serif;
-} */
-
-
 #buttons {
  
-  width: 300px;
+  width: 600px;
   position: absolute;
   left: 3.5%;
   right: 0;
@@ -213,13 +89,25 @@ body, html {
   }
 
   #buttonss {
-    width: 300px;
+    width: 600px;
     position: absolute;
     left: 3.5%;
     right: 0;
     margin-left: auto;
     margin-right: auto;
      top: 70%;
+}
+
+#buttonss li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: #000000;    
+  margin-right: 30px;
+  line-height: 60px;
+  font-weight: 500;
+  font-size: 350%
+
 }
 
   #buttons li {
@@ -231,49 +119,41 @@ body, html {
     /* width: 350px; */
     line-height: 60px;
     font-weight: 500;
-    font-size: 120%
+    font-size: 350%
   }
 
-  #buttons li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    display: block;
-  }
 
-  #buttonss li {
-    float: left;
-    list-style: none;
-    text-align: center;
-    background-color: #000000;    
-    margin-right: 30px;
-    line-height: 60px;
-    font-weight: 500;
-    font-size: 120%
 
-  }
+#buttons li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
 
-  #buttonss li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    display: block;
-  }
 
-  #selected {
-    border-radius: 5px;
-    border: 2px solid #73AD21;
-    padding: 3px; 
-    padding-left: 5px;
-    /* padding-left: 10px; */
-  }
+#buttonss li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
 
-  #verses {
-    width: 300px;
-    position: absolute;
-    left: 3.5%;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-     top: 29%;
+#selected {
+  border-radius: 5px;
+  border: 2px solid #73AD21;
+  padding: 3px; 
+  padding-left: 5px;
+}
+
+#verses {
+  width: 800px;
+  position: absolute;
+  left: 3.5%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+   top: 29%;
+  font-size:  35px ;
+
 }
 
 #verses li{
@@ -283,7 +163,9 @@ body, html {
     margin-right: 10px;
     text-align: left;
    color: #FFFFFF;
-    padding-bottom: 10px;
+    padding-bottom: 80px;
+   line-height: 60px;
+
 }
 
 .row {
@@ -334,29 +216,67 @@ body, html {
 }
 
 h3 svg{  
-  color: wheat;
-  font-size: 50px;
+  color: white;
+  /* font-size: 50px; */
 }
 
 h3 {
-  color: wheat;
+  color: white;
 }
  
 #review li h3 svg {
   float: left;
   margin: 0 15px 0 0;
+  font-size: 100px;
 }
  
 ul#review li p {
-  color: wheat;
+  color: white;
+  font-size: 20px;
 }
 
-/* #verses li::before {
-  content: "•"; 
-  color: #c1bf88;
+.fonts{
+    flex-wrap: wrap;
+    padding: 0 4px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 28%;
+    left: 38.3%;
+    right: 0;
+}
+
+.font {
+  object-fit: contain;
+  width: 230px;
+  height: 230px;
+}
+
+.gallery {
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+figcaption {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: wheat;
+  text-align: center;
+  font-weight: 600;
   font-size: 30px;
-  display: inline-block; 
-  vertical-align: text-bottom;
-  margin-left: -0.5em;
-  top: 10px;
-} */
+}
+
+img {
+  border: none;
+  transition: transform .2s ease-in-out;
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+}

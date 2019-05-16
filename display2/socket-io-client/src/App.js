@@ -31,11 +31,8 @@ class App extends Component {
     socket.on('to', function(data){
       t.setState({ ttwo: data.dtwo, esel: data.esel });
     });
-
     
-
     socket.on('three', function(data){
-      console.log(data);
       t.setState({ ttwo: data.dtwo, elang: data.elang, everse: data.everse });
     });
 
@@ -56,7 +53,7 @@ class App extends Component {
   }
 
   render() {
-    const { ttwo, esel, elang, everse } = this.state;    
+    const { ttwo, esel, elang, everse } = this.state;   
     return (    
     <div className={ttwo}>
       {(function() {

@@ -1,52 +1,45 @@
 
 import React, { Component } from "react";
 import './App.css';
-import v0 from "./images/f0.png";
-import v1 from "./images/f1.png";
-import v2 from "./images/f2.png";
-import v3 from "./images/f3.png";
+import v0 from "./images/frames/f0.png";
+import v1 from "./images/frames/f1.png";
+import v2 from "./images/frames/f2.png";
+import v3 from "./images/frames/f3.png";
 
 class Frames extends Component {
 
-    rone = (sel) => {        
-        let row = [];
-        let one = [{v0}, {v1}];
-        for (let i = 0; i < one.length; i++) {
-            if(sel == i){                
-                row.push(<img id='selected' src={one[i]['v'+i]} />);
-            } else {
-                row.push(<img src={one[i]['v'+i]} />);
-            }
-        }
-        return row;
+    constructor(props) {
+        super(props);
+        this.frame = [v0,v1,v2,v3];
     }
-
-    rtwo = (sel) => {
-        let row = [];
-        let one = [{v2}, {v3}];
-        console.log(one); 
-        for (let i = 2; i < 4; i++) {  
-            console.log(i); 
-            if(sel == i){                
-                row.push(<img id='selected' src={one[i-2]['v'+i]} />);
-            } else {
-                row.push(<img src={one[i-2]['v'+i]} />);
-            }
-        }
-        return row;
-    }
-
+   
     render() {
         const {esel} = this.props;
-        return(<div className="row">
-            <div className="column">
-                 {this.rone(esel)}
+        
+        return(
+            <div className="fonts">
+            <div className="gallery">
+                <figure>
+                    <img className='font'src={this.frame[0]} />
+                    <figcaption>1</figcaption>
+                </figure>
+            <figure>
+            <img className='font'src={this.frame[1]} alt="" />
+      <figcaption>2</figcaption>
+            </figure>
             </div>
-            <div className="column">
-                {this.rtwo(esel)}
+            <div className="gallery">
+            <figure>
+            <img className='font'src={this.frame[2]} alt="" />
+      <figcaption>3</figcaption>
+            </figure>
+            <figure>
+            <img className='font'src={this.frame[3]} alt="" />
+      <figcaption>4</figcaption>
+            </figure>
             </div>
-        </div>
-    );
+        </div>  
+    );        
     }
 }
 

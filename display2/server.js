@@ -9,35 +9,36 @@ let msg;
 let event;
 
 app.get('/to', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;    
     event = 'to';
+    console.log(req.query);
     msg = {dtwo : req.query.two, esel : req.query.sel};
 });
 
 app.get('/three', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;   
     event = 'three';
     msg = {dtwo : req.query.two, elang : req.query.lang, everse : req.query.verse};
 });
 
 app.get('/four', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;   
     event = 'four';
     msg = {dtwo : req.query.two, esel : req.query.sel};
 });
 
 app.get('/five', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;    
     event = 'five';
     msg = {dtwo : req.query.two, esel : req.query.sel};
 });
 
 app.get('/six', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;    
     event = 'six';
     msg = {dtwo : req.query.two};
