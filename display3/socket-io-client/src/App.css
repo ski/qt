@@ -76,7 +76,7 @@ body, html {
 #verses {
   width: 300px;
   position: absolute;
-  left: 3.5%;
+  left: 0.5%;
   right: 0;
   margin-left: auto;
   margin-right: auto;
@@ -99,4 +99,73 @@ body, html {
 
 #original {
   direction: rtl;
+}
+
+.fonts{
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 28%;
+  left: 38.3%;
+  right: 0;
+}
+
+.font {
+object-fit: contain;
+width: 230px;
+height: 230px;
+}
+
+.gallery {
+
+display: flex;
+flex-wrap: wrap;
+padding-top: 5px;
+}
+
+figure {
+margin: 0;
+overflow: hidden;
+}
+
+figcaption {
+margin-top: 10px;
+margin-bottom: 25px;
+color: white;
+text-align: center;
+font-weight: 600;
+font-size: 30px;
+}
+
+img {
+border: none;
+transition: transform .2s ease-in-out;
+object-fit: contain;
+width: 150px;
+height: 150px;
+}
+
+.onefont{
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 28%;
+  left: 39.3%;
+  right: 0;
+}
+
+
+div.figure {
+  /* float: right; */
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin: 0.5em;
+  padding: 0.5em;
 }

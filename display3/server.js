@@ -12,7 +12,7 @@ let event;
 //sudo npm install -g yarn
 //sudo apt install git
 app.get('/to', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;    
     event = 'to';
     msg = {dthree : req.query.three, esel : req.query.sel};
@@ -22,31 +22,31 @@ app.get('/to', (req, res) => {
 app.get('/three', (req, res) => {
     console.log(req.query.elang);
     console.log(req.query.everse);
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;   
     event = 'three';
     msg = {dthree : req.query.three, elang : req.query.elang, everse : req.query.everse};
 });
 
 app.get('/four', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;   
     event = 'four';
-    msg = {dtwo : req.query.two, esel : req.query.sel};
+    msg = {dthree : req.query.three, esel : req.query.sel, elang: req.query.lang, everse: req.query.font };
 });
 
 app.get('/five', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;    
     event = 'five';
-    msg = {dtwo : req.query.two, esel : req.query.sel};
+    msg = {dthree : req.query.two, esel : req.query.sel};
 });
 
 app.get('/six', (req, res) => {
-    res.status(200).send('pingpong');
+    res.status(200).send();
     payload = true;    
     event = 'six';
-    msg = {dtwo : req.query.two};
+    msg = {dthree : req.query.two};
 });
 
 const update = async socket => {

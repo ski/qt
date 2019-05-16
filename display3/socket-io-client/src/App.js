@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import socketIOClient from "socket.io-client";
 import './App.css';
-import Verses from './Verses'
+import Verses from './Verses';
+import Font from './Font';
 
 class App extends Component {
   constructor() {
@@ -9,7 +10,7 @@ class App extends Component {
     this.state = {
       response: {two:'c21', sel: 0},
       dthree: 'c31',
-      esel : '0',
+      esel : '1',
       elang: 4,
       everse: 2,
       endpoint: "http://127.0.0.1:3005"
@@ -29,20 +30,26 @@ class App extends Component {
       console.log(data);
       t.setState({ dthree: data.dthree, elang: data.elang, everse: data.everse });
     });
+
+    socket.on('four', function(data){
+      console.log(data);
+      t.setState({ dthree: data.dthree, elang: data.elang, esel: data.esel, everse: data.everse });
+
+    });
   }
 
   render() {
     
     const { dthree, esel, elang, everse } = this.state;  
-    console.log(elang);  
+    console.log(this.state);  
     return (    
     <div className={dthree}>
       {(function() {
         switch(dthree) {          
           case 'c33':
-            return <Verses lang={elang} verse={everse}/>;    
+            return <Verses lang={elang} verse={everse}/>;  
           case 'c34':
-            return <h4>c34</h4>;
+            return <Font lang={elang} verse={everse} sel={esel} />;  
           case 'c35':
             return <span>c35</span>; 
           case 'c36':
