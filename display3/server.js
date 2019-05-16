@@ -39,7 +39,7 @@ app.get('/five', (req, res) => {
     res.status(200).send();
     payload = true;    
     event = 'five';
-    msg = {dthree : req.query.two, esel : req.query.sel};
+    msg = {dthree : req.query.two, esel : req.query.sel, elang: req.query.lang, everse: req.query.font, eframe=req.query.frame};
 });
 
 app.get('/six', (req, res) => {
