@@ -8,7 +8,7 @@ var displaythree = new Client();
 exports.sync = function (req, res) {
     client.get("http://192.168.1.165:3002/to?two=" + req.query.two + '&sel=' + req.query.sel, function (data, response) {});
     client.get("http://192.168.1.157:3005/to?three=" + req.query.three + '&sel=' + req.query.sel, function (data, response) {});
-    res.status(200);
+    res.status(200).send();
 };
 
 http://localhost:3003/sync?two=c21&three=c31&sel=5
