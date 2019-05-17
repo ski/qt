@@ -88,18 +88,21 @@ body, html {
   list-style: none;
   text-align: center;
   background-color: #000000;
-  margin-right: 10px;  
-  line-height: 25px;
-  font-weight: 500;
-  font-size: 50px;
+  margin-right: 10px;      
   padding-bottom: 180px;
   color: #40DAFF;
   width: 100%;
-  line-height: 70px;
+  font-weight: 600;
+  font-size: 70px;
+  font-style: italic;
 }
 
 #original {
   direction: rtl;
+  font-size: 100px !important;
+  line-height: 100px !important;
+  font-style: normal !important;
+  font-family: adobe arabic;
 }
 
 .fonts{
@@ -115,8 +118,8 @@ body, html {
 
 .font {
 object-fit: contain;
-width: 230px;
-height: 230px;
+width: 500px;
+height: 500px;
 }
 
 .gallery {
@@ -132,12 +135,13 @@ overflow: hidden;
 }
 
 figcaption {
-margin-top: 10px;
-margin-bottom: 25px;
-color: white;
+margin-top: 170px;
+margin-bottom: 70px;
+color: #40DAFF;
 text-align: center;
+line-height: 10px;
 font-weight: 600;
-font-size: 30px;
+font-size: 70px;
 }
 
 img {
@@ -155,14 +159,22 @@ height: 150px;
   margin-left: auto;
   margin-right: auto;
   top: 20%;
-  left: 35.3%;
+  left: 6.5%;
   right: 0;
 }
 
+/* line-height: 10px;
+font-weight: 600;
+font-size: 30px;
+text-align: center;
+font-style: italic;
+font-size: smaller; */
+
+
+
 
 div.figure {
-  /* float: right; */
-  width: 60%;
+  width: 90%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
