@@ -32,6 +32,9 @@ app.get('/four', (req, res) => {
     res.status(200).send();
     payload = true;   
     event = 'four';
+    console.log(req.query.sel);
+    console.log(req.query.lang);
+    console.log(req.query.font);
     msg = {dthree : req.query.three, esel : req.query.sel, elang: req.query.lang, everse: req.query.font };
 });
 

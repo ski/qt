@@ -16,7 +16,6 @@ app.get('/to', (req, res) => {
 });
 
 app.get('/three', (req, res) => {
-    console.log('crappp');
     res.status(200).send();
     payload = true;   
     event = 'three';
