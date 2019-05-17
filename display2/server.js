@@ -12,11 +12,11 @@ app.get('/to', (req, res) => {
     res.status(200).send();
     payload = true;    
     event = 'to';
-    console.log(req.query);
     msg = {dtwo : req.query.two, esel : req.query.sel};
 });
 
 app.get('/three', (req, res) => {
+    console.log('crappp');
     res.status(200).send();
     payload = true;   
     event = 'three';

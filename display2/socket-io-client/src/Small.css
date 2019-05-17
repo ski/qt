@@ -40,4 +40,25 @@
     font-weight: 500;
     font-size: 120%
   }
+
+  #verses {
+    width: 300px;
+    position: absolute;
+    left: 3.5%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 29%;
+  }
+
+  #verses li{
+    float: left;
+    list-style: none;
+    background-color: #000000;    
+    margin-right: 10px;
+    text-align: left;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+  }
+  
   

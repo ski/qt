@@ -69,7 +69,7 @@ class App extends Component {
           case 'c26':
             return <Review />; 
           default:
-            return <h2>Loading {ttwo}</h2>;
+            return '';
         }
       })()}
     </div>    
