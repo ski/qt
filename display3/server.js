@@ -12,6 +12,7 @@ let event;
 //sudo npm install -g yarn
 //sudo apt install git
 app.get('/to', (req, res) => {
+    console.log(req.query);
     res.status(200).send();
     payload = true;    
     event = 'to';
@@ -20,8 +21,7 @@ app.get('/to', (req, res) => {
 });
 
 app.get('/three', (req, res) => {
-    console.log(req.query.elang);
-    console.log(req.query.everse);
+    console.log(req.query);
     res.status(200).send();
     payload = true;   
     event = 'three';
@@ -29,23 +29,23 @@ app.get('/three', (req, res) => {
 });
 
 app.get('/four', (req, res) => {
+    console.log(req.query);
     res.status(200).send();
     payload = true;   
     event = 'four';
-    console.log(req.query.sel);
-    console.log(req.query.lang);
-    console.log(req.query.font);
     msg = {dthree : req.query.three, esel : req.query.sel, elang: req.query.lang, everse: req.query.font };
 });
 
 app.get('/five', (req, res) => {
+    console.log(req.query);
     res.status(200).send();
     payload = true;    
     event = 'five';
-    //msg = {dthree : req.query.two, esel : req.query.sel, elang: req.query.lang, everse: req.query.font, eframe=req.query.frame};
+    msg = {dthree : req.query.three, elang: req.query.lang, everse: req.query.font, eframe: req.query.frame};
 });
 
 app.get('/six', (req, res) => {
+    console.log(req.query);
     res.status(200).send();
     payload = true;    
     event = 'six';
