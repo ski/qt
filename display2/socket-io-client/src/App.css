@@ -248,8 +248,8 @@ ul#review li p {
 
 .font {
   object-fit: contain;
-  width: 230px;
-  height: 230px;
+  width: 180px;
+  height: 180px;
 }
 
 .gallery {
@@ -267,16 +267,13 @@ figure {
 figcaption {
   margin-top: 10px;
   margin-bottom: 25px;
-  color: wheat;
+  color: white;
   text-align: center;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 30px;
 }
 
 img {
   border: none;
-  transition: transform .2s ease-in-out;
-  object-fit: contain;
-  width: 150px;
-  height: 150px;
+  object-fit: fill;
 }
