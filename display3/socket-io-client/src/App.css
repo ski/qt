@@ -80,7 +80,7 @@ body, html {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 27%;
+  top: 19%;
 }
 
 #verses li {
@@ -89,68 +89,70 @@ body, html {
   text-align: center;
   background-color: #000000;
   margin-right: 10px;      
-  padding-bottom: 180px;
+  padding-bottom: 69px;
   color: #40DAFF;
   width: 100%;
   font-weight: 600;
   font-size: 70px;
   font-style: italic;
+
 }
 
 #original {
   direction: rtl;
   font-size: 100px !important;
-  line-height: 100px !important;
+  line-height: 140px !important;
   font-style: normal !important;
   font-family: adobe arabic;
 }
 
 .fonts{
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 4px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 28%;
-  left: 12.3%;
+  top: 20%;
+  left: 38.3%;
   right: 0;
 }
 
 .font {
 object-fit: contain;
-width: 500px;
-height: 500px;
+width: 550px;
+height: 550px;
+padding-top: 0.20px;
 }
-
-
 
 .gallery {
 
 display: flex;
 flex-wrap: wrap;
-padding-top: 5px;
+padding-top: 0px;
 }
 
 figure {
 margin: 0;
 overflow: hidden;
+
 }
 
 figcaption {
-  margin-top: 170px;
-  margin-bottom: 70px;
-  color: #40DAFF;
-  text-align: center;
-  font-weight: 600;
-  font-size: 70px;
+margin-top: 170px;
+margin-bottom: 600px;
+color: #40DAFF;
+text-align: center;
+line-height: 100px;
+font-weight: 600;
+font-size: 50px;
 }
 
 img {
-  border: none;
-  transition: transform .2s ease-in-out;
-  object-fit: contain;
-  width: 150px;
-  height: 150px;
+border: none;
+transition: transform .2s ease-in-out;
+object-fit: contain;
+width: 150px;
+height: 100px;
 }
 
 .onefont{
@@ -159,10 +161,20 @@ img {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 10%;
+  top: 20%;
   left: 6.5%;
   right: 0;
 }
+
+/* line-height: 10px;
+font-weight: 600;
+font-size: 30px;
+text-align: center;
+font-style: italic;
+font-size: smaller; */
+
+
+
 
 div.figure {
   width: 90%;
