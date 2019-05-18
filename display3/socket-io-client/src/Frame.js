@@ -12,7 +12,7 @@ class Frame extends Component {
         console.log(url);
         return(
 <div>
-    <img className='frame' src={require("" + url)} />
+    <img className='art' src={require("" + url)} />
   </div>
         );
     }

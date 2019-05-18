@@ -14,27 +14,26 @@ class Frames extends Component {
     }
    
     render() {
-        const {esel} = this.props;
-        
+        const {esel} = this.props;        
         return(
-            <div className="fonts">
+            <div className="frames">
             <div className="gallery">
                 <figure>
-                    <img className='font'src={this.frame[0]} />
+                    <img className='frame'src={this.frame[0]} />
                     <figcaption>1</figcaption>
                 </figure>
             <figure>
-            <img className='font'src={this.frame[1]} alt="" />
+            <img className='frame'src={this.frame[1]} alt="" />
       <figcaption>2</figcaption>
             </figure>
             </div>
             <div className="gallery">
             <figure>
-            <img className='font'src={this.frame[2]} alt="" />
+            <img className='frame'src={this.frame[2]} alt="" />
       <figcaption>3</figcaption>
             </figure>
             <figure>
-            <img className='font'src={this.frame[3]} alt="" />
+            <img className='frame'src={this.frame[3]} alt="" />
       <figcaption>4</figcaption>
             </figure>
             </div>

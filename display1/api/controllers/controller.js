@@ -2,15 +2,16 @@
 var Client = require('node-rest-client').Client;
 var client = new Client();
 
-var d2 = "http://192.168.1.104:3002";
-var d3 = "http://192.168.1.126:3005/";
+// var d2 = "http://192.168.1.104:3002";
+// var d3 = "http://192.168.1.126:3005";
 
-// var d2 = "http://localhost:3002";
-// var d3 = "http://localhost:3005";
+var d2 = "http://localhost:3002";
+var d3 = "http://localhost:3005";
 
 //http://localhost:3003/sync?two=c21&three=c31&sel=5
 //http://localhost:3005/sync?three=c31&&sel=5
 exports.sync = function (req, res) {
+    console.log(req.query);
     client.get(d2 + '/to?two=' + req.query.two + '&sel=' + req.query.sel, function (data, response) {});
     client.get(d3 + '/to?three=' + req.query.three + '&sel=' + req.query.sel, function (data, response) {});
     res.status(200).send();
@@ -28,7 +29,6 @@ exports.one = function (req, res) {
 exports.two = function (req, res) {
     console.log(req.query);
     client.get(d2 + '/to?two=' + req.query.two + '&lang=' + req.query.lang + '&verse=' + req.query.verse, function (data, response) {});    
-    //client.get('http://localhost:3005/to?three=' + req.query.three +'&sel=' + req.query.sel);
     res.status(200).send();
 };
 
