@@ -1,6 +1,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  background-color: #000000;
 }
 
 #root {
@@ -88,13 +89,17 @@ body, html {
   list-style: none;
   text-align: center;
   background-color: #000000;
-  margin-right: 10px;      
+  margin-right: 30px;  
+  margin-right: 10px;  
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 120%;
+  padding-bottom: 20px;
+  font-size: 50px;
   padding-bottom: 180px;
   color: #40DAFF;
   width: 100%;
-  font-weight: 600;
-  font-size: 70px;
-  font-style: italic;
+  line-height: 70px;
 }
 
 #original {
@@ -118,12 +123,11 @@ body, html {
 
 .font {
 object-fit: contain;
-width: 260px;
-height: 260px;
+width: 230px;
+height: 230px;
 }
 
 .gallery {
-
 display: flex;
 flex-wrap: wrap;
 padding-top: 5px;
@@ -139,9 +143,7 @@ margin-top: 170px;
 margin-bottom: 70px;
 color: #40DAFF;
 text-align: center;
-line-height: 10px;
 font-weight: 600;
-font-size: 70px;
 }
 
 img {
@@ -159,7 +161,7 @@ height: 150px;
   margin-left: auto;
   margin-right: auto;
   top: 20%;
-  left: 6.5%;
+  left: 35.5%;
   right: 0;
 }
 
@@ -174,7 +176,7 @@ font-size: smaller; */
 
 
 div.figure {
-  width: 90%;
+  width: 60%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
