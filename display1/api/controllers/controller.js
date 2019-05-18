@@ -2,11 +2,11 @@
 var Client = require('node-rest-client').Client;
 var client = new Client();
 
-// var d2 = "http://192.168.1.104:3002/to?two=";
-// var d3 = "http://192.168.1.126:3005/to?three=";
+var d2 = "http://192.168.1.104:3002";
+var d3 = "http://192.168.1.126:3005/";
 
-var d2 = "http://localhost:3002";
-var d3 = "http://localhost:3005";
+// var d2 = "http://localhost:3002";
+// var d3 = "http://localhost:3005";
 
 //http://localhost:3003/sync?two=c21&three=c31&sel=5
 //http://localhost:3005/sync?three=c31&&sel=5
