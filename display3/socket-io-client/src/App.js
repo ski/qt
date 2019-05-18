@@ -3,6 +3,7 @@ import socketIOClient from "socket.io-client";
 import './App.css';
 import Verses from './Verses';
 import Font from './Font';
+import Frame from './Frame';
 
 class App extends Component {
   constructor() {
@@ -13,6 +14,7 @@ class App extends Component {
       esel : '1',
       elang: 4,
       everse: 2,
+      eframe: 0,
       endpoint: "http://127.0.0.1:3005"
     };
   }
@@ -34,14 +36,18 @@ class App extends Component {
     socket.on('four', function(data){
       console.log(data);
       t.setState({ dthree: data.dthree, elang: data.elang, esel: data.esel, everse: data.everse });
+    });
 
+    socket.on('five', function(data){
+      console.log(data);
+      t.setState({ dthree: data.dthree, elang: data.elang, everse: data.everse, efont: data.efont, esel: data.eframe  });
     });
   }
 
   render() {
-    
-    const { dthree, esel, elang, everse } = this.state;  
-    console.log(this.state);  
+    //lang/verse/font/frame
+    const { dthree, esel, elang, efont, everse } = this.state;  
+    // console.log(this.state);  
     return (    
     <div className={dthree}>
       {(function() {
@@ -51,7 +57,7 @@ class App extends Component {
           case 'c34':
             return <Font lang={elang} verse={everse} sel={esel} />;  
           case 'c35':
-            return <span>c35</span>; 
+            return <Frame lang={elang} verse={everse} font={efont} sel={esel} /> ; 
           case 'c36':
             return <span>c36</span>;
           default:

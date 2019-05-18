@@ -30,6 +30,7 @@ app.get('/four', (req, res) => {
 });
 
 app.get('/five', (req, res) => {
+    console.log(req.query);
     res.status(200).send();
     payload = true;    
     event = 'five';

@@ -52,8 +52,8 @@ body, html {
   width: 100%;
 }
 
-.c35 {
-  background: url("images/c35.jpg");
+.frame {
+  /* //background: url("images/c35.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -95,17 +95,14 @@ class Font extends Component {
     }
 
     render() {
-        const {lang,verse,sel} = this.props;        
+        const {lang,verse,sel} = this.props;     
         let cali = this.fonts[sel];
         const translate = this.makeVerses()[lang][sel];
-        console.log(cali);
         return(
             
             <div className="onefont">
             <div className='figure'>
-  <p><img className='font' src={cali[verse]}
-    width="136" height="200"
-    alt="Eiffel tower" /></p>
+  <p><img className='font' src={cali[verse]}/></p>
   <figcaption>{translate}</figcaption>
 </div></div>
       

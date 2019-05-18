@@ -38,10 +38,11 @@ app.get('/four', (req, res) => {
 
 app.get('/five', (req, res) => {
     console.log(req.query);
+    console.log('5');
     res.status(200).send();
     payload = true;    
     event = 'five';
-    msg = {dthree : req.query.three, elang: req.query.lang, everse: req.query.font, eframe: req.query.frame};
+    msg = {dthree : req.query.three, elang: req.query.elang, everse: req.query.everse, efont: req.query.efont, eframe: req.query.eframe};
 });
 
 app.get('/six', (req, res) => {
