@@ -52,6 +52,8 @@ exports.four = function (req, res) {
 
 //frames
 //curl "http://localhost:3002/five?two=c25&sel=0&frame=0&verse=0&lang=0"
+//http://192.168.0.12:3003/five?two=c25&three=c35&sel=0&font=0&lang=0&verse=0
+
 exports.five = function (req, res) {
     console.log(req.query);
     var query = d3 + '/five?three=' + req.query.three 
