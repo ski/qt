@@ -2,12 +2,12 @@
 var Client = require('node-rest-client').Client;
 var client = new Client();
 
-var d2 = "http://192.168.1.104:3002";
-var d3 = "http://192.168.1.126:3005";
+// var d2 = "http://192.168.1.104:3002";
+// var d3 = "http://192.168.1.126:3005";
 
 
-// var d2 = "http://localhost:3002";
-// var d3 = "http://localhost:3005";
+var d2 = "http://localhost:3002";
+var d3 = "http://localhost:3005";
 
 //http://localhost:3003/sync?two=c21&three=c31&sel=5
 //http://localhost:3005/sync?three=c31&&sel=5
@@ -32,7 +32,7 @@ exports.two = function (req, res) {
     client.get(d2 + '/to?two=' + req.query.two + '&lang=' + req.query.lang + '&verse=' + req.query.verse, function (data, response) {});    
     res.status(200).send();
 };
-sdp_diameter_request_status
+
 //verses
 //http://localhost:3003/three?two=c23&lang=2&verse=3
 exports.three = function (req, res) {
