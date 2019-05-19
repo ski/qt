@@ -5,7 +5,6 @@ var client = new Client();
 var d2 = "http://192.168.1.127:3002";
 var d3 = "http://192.168.1.137:3005";
 
-
 // var d2 = "http://localhost:3002";
 // var d3 = "http://localhost:3005";
 
