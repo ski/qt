@@ -1,0 +1,187 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.c31 {
+  background: url("images/c31.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c32 {
+  background: url("images/c32.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c33 {
+  background: url("images/c33.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c34 {
+  background: url("images/c34.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.art {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000000;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.c36 {
+  background: url("images/c36.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%;
+}
+
+
+#verses {
+  width: 820px;
+  position: absolute;
+  left: 3.5%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 19%;
+}
+
+#verses li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: #000000;
+  margin-right: 10px;      
+  padding-bottom: 69px;
+  color: #40DAFF;
+  width: 100%;
+  font-weight: 600;
+  font-size: 70px;
+  font-style: italic;
+
+}
+
+#original {
+  direction: rtl;
+  font-size: 100px !important;
+  line-height: 140px !important;
+  font-style: normal !important;
+  font-family: adobe arabic;
+}
+
+.fonts{
+  flex-wrap: wrap;
+  padding: 4px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20%;
+  left: 38.3%;
+  right: 0;
+}
+
+.font {
+object-fit: contain;
+width: 550px;
+height: 550px;
+padding-top: 0.20px;
+}
+
+.gallery {
+
+display: flex;
+flex-wrap: wrap;
+padding-top: 0px;
+}
+
+figure {
+margin: 0;
+overflow: hidden;
+
+}
+
+figcaption {
+margin-top: 170px;
+margin-bottom: 600px;
+color: #40DAFF;
+text-align: center;
+line-height: 100px;
+font-weight: 600;
+font-size: 50px;
+}
+
+img {
+border: none;
+transition: transform .2s ease-in-out;
+object-fit: contain;
+width: 150px;
+height: 100px;
+}
+
+.onefont{
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20%;
+  left: 6.5%;
+  right: 0;
+}
+
+/* line-height: 10px;
+font-weight: 600;
+font-size: 30px;
+text-align: center;
+font-style: italic;
+font-size: smaller; */
+
+
+
+
+div.figure {
+  width: 90%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin: 0.5em;
+  padding: 0.5em;
+}
