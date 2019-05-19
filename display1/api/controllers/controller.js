@@ -71,10 +71,17 @@ exports.five = function (req, res) {
 //review
 //http://localhost:3003/six?two=c26
 exports.six = function (req, res) {
-    console.log(req.query.two);
-    client.get("http://localhost:3002/six?two=" + req.query.two , function (data, response) {
-        res.status(200).send('pingpong');
-    });
+    console.log(req.query);
+    var query = d2 + '/six?two=' + req.query.two;    
+    client.get(query, function (data, response) {});
+    query = d3 + '/five?three=' + req.query.three 
+        + '&elang=' + req.query.lang 
+        + '&efont=' + req.query.font 
+        + '&eframe=' + req.query.sel
+        + '&everse=' + req.query.verse;
+    client.get("http://localhost:3002/five?two=" + req.query.two , function (data, response) {});
+    client.get(query, function (data, response) {});
+    res.status(200).send();
 };
 
 
