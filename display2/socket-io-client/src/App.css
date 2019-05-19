@@ -256,7 +256,7 @@ html{
     height: 300px;
     }
 
-    .frame{
+    .frames{
         flex-wrap: wrap;
         padding: 0 4px;
         position: absolute;
@@ -267,6 +267,12 @@ html{
         right: 0;
     }
   
+    .frame {
+        object-fit: contain;
+        width: 400px;
+        height: 300px;
+        }
+    
   .gallery {
     display: flex;
     padding-top: 5px;
