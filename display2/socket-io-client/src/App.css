@@ -24,7 +24,7 @@ html{
   }
   
 
-  
+
   .c22 {
       background: url("images/c22.png");
       background-repeat: no-repeat;
@@ -245,8 +245,8 @@ html{
       position: absolute;
       margin-left: auto;
       margin-right: auto;
-      top: 28%;
-      left: 38.3%;
+      top: 32%;
+      left: 8.5%;
       right: 0;
   }
   
@@ -254,6 +254,17 @@ html{
     object-fit: contain;
     width: 400px;
     height: 300px;
+    }
+
+    .frame{
+        flex-wrap: wrap;
+        padding: 0 4px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 28%;
+        left: 38.5%;
+        right: 0;
     }
   
   .gallery {
