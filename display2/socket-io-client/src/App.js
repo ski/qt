@@ -12,7 +12,7 @@ import Review from "./Review";
 //Display Two Servers
 class App extends Component {
 
-  
+
   constructor() {
     super();
     this.state = {
@@ -67,8 +67,8 @@ class App extends Component {
             return <Fonts esel={esel}/>;   
           case 'c25':
             return <Frames esel={esel}/>; 
-          case 'c26':
-            return <Review />; 
+          // case 'c26':
+          //   return <Review />; 
           default:
             return '';
         }
