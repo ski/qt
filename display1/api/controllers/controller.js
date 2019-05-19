@@ -79,8 +79,7 @@ exports.six = function (req, res) {
         + '&efont=' + req.query.font 
         + '&eframe=' + req.query.sel
         + '&everse=' + req.query.verse;
-    client.get("http://localhost:3002/five?two=" + req.query.two , function (data, response) {});
-    client.get(query, function (data, response) {});
+    client.get(query , function (data, response) {});
     res.status(200).send();
 };
 
