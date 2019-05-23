@@ -22,6 +22,9 @@ module.exports = function(app) {
     
     app.route('/six')
     .get(navigate.six);
+	
+    app.route('/print')
+ 	.get(navigate.print);
 
 //   app.route('/tasks/:taskId')
 //     .get(todoList.read_a_task)
