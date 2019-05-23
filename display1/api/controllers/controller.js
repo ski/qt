@@ -88,6 +88,34 @@ exports.six = function (req, res) {
     res.status(200).send();
 };
 
+var printer = require('printer');
+var fs = require('fs');
+util = require('util');
+path = require('path');
+
+exports.print = function(req, res) {
+    console.log(req.query);    
+    res.status(200).send();
+    var fileName = path.resolve('art/0/0/0/0.jpg');
+    fs.readFile(fileName, function(err, data){
+        if(err){
+            console.error('err:' + err);
+            return;
+        }
+        printer.printDirect({
+            printer: 'EPSON_L4150_Series',
+            data: data,
+            type: 'JPEG',
+            success: function(id){
+                return;
+            },
+            error: function(err) {
+                console.log('printing error' + err )
+            }
+        })
+    });
+}
+
 
 
 
