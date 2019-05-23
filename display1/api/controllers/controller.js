@@ -95,8 +95,8 @@ var path = require('path');
 exports.print = function(req, res) {
     console.log(req.query);
     res.status(200).send();
-    var name = '/home/pi/art/'  req.query.lang + '/' +
-    var fileName = path.resolve('art/0/0/0/0.jpg');
+    var name = '/home/pi/art/' +  req.query.lang + '/' + req.query.font + '/' + req.query.sel + '/' + req.query.verse + '.jpg';
+    var fileName = path.resolve(name);
     fs.readFile(fileName, function(err, data){
         if(err){
             console.error('err:' + err);
