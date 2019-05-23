@@ -90,11 +90,10 @@ exports.six = function (req, res) {
 
 var printer = require('printer');
 var fs = require('fs');
-util = require('util');
-path = require('path');
+var path = require('path');
 
 exports.print = function(req, res) {
-    console.log(req.query);    
+    console.log(req.query);
     res.status(200).send();
     var fileName = path.resolve('art/0/0/0/0.jpg');
     fs.readFile(fileName, function(err, data){
@@ -114,7 +113,7 @@ exports.print = function(req, res) {
             }
         })
     });
-}
+};
 
 
 
