@@ -88,6 +88,9 @@ exports.six = function (req, res) {
     res.status(200).send();
 };
 
+exports.print = function(req, res) {
+}
+
 var printer = require('printer');
 var fs = require('fs');
 var path = require('path');
@@ -107,7 +110,7 @@ exports.print = function(req, res) {
             printer: 'EPSON_L4150_Series',
             data: data,
             type: 'JPEG',
-            success: function(id){
+            success: function(id){ 
                 return;
             },
             error: function(err) {
