@@ -3,12 +3,12 @@ var Client = require('node-rest-client').Client;
 var client = new Client();
 
 //batch a
-var d2 = "http://192.168.1.104:3002";
-var d3 = "http://192.168.1.126:3005";
+// var d2 = "http://192.168.1.104:3002";
+// var d3 = "http://192.168.1.126:3005";
 
 //batch b
-// var d2 = "http://192.168.1.127:3002";
-// var d3 = "http://192.168.1.137:3005";
+var d2 = "http://192.168.1.127:3002";
+var d3 = "http://192.168.1.137:3005";
 
 // var d2 = "http://localhost:3002";
 // var d3 = "http://localhost:3005";
