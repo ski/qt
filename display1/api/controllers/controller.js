@@ -7,11 +7,11 @@ var client = new Client();
 // var d3 = "http://192.168.1.126:3005";
 
 //batch b
-//var d2 = "http://192.168.1.127:3002";
-//var d3 = "http://192.168.1.137:3005";
+var d2 = "http://192.168.1.127:3002";
+var d3 = "http://192.168.1.137:3005";
 
- var d2 = "http://localhost:3002";
- var d3 = "http://localhost:3005";
+// var d2 = "http://localhost:3002";
+// var d3 = "http://localhost:3005";
 
 //http://localhost:3003/sync?two=c21&three=c31&sel=5
 //http://localhost:3005/sync?three=c31&&sel=5
