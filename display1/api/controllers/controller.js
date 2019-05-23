@@ -3,12 +3,12 @@ var Client = require('node-rest-client').Client;
 var client = new Client();
 
 //batch a
-// var d2 = "http://192.168.1.104:3002";
-// var d3 = "http://192.168.1.126:3005";
+var d2 = "http://192.168.1.104:3002";
+var d3 = "http://192.168.1.126:3005";
 
 //batch b
-var d2 = "http://192.168.1.127:3002";
-var d3 = "http://192.168.1.137:3005";
+// var d2 = "http://192.168.1.127:3002";
+// var d3 = "http://192.168.1.137:3005";
 
 // var d2 = "http://localhost:3002";
 // var d3 = "http://localhost:3005";
@@ -88,6 +88,9 @@ exports.six = function (req, res) {
     res.status(200).send();
 };
 
+exports.print = function(req, res) {
+}
+
 var printer = require('printer');
 var fs = require('fs');
 var path = require('path');
@@ -106,7 +109,7 @@ exports.print = function(req, res) {
             printer: 'EPSON_L4150_Series',
             data: data,
             type: 'JPEG',
-            success: function(id){
+            success: function(id){ 
                 return;
             },
             error: function(err) {
