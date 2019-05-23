@@ -7,11 +7,11 @@ var client = new Client();
 // var d3 = "http://192.168.1.126:3005";
 
 //batch b
-var d2 = "http://192.168.1.127:3002";
-var d3 = "http://192.168.1.137:3005";
+//var d2 = "http://192.168.1.127:3002";
+//var d3 = "http://192.168.1.137:3005";
 
-// var d2 = "http://localhost:3002";
-// var d3 = "http://localhost:3005";
+ var d2 = "http://localhost:3002";
+ var d3 = "http://localhost:3005";
 
 //http://localhost:3003/sync?two=c21&three=c31&sel=5
 //http://localhost:3005/sync?three=c31&&sel=5
@@ -95,7 +95,8 @@ var path = require('path');
 exports.print = function(req, res) {
     console.log(req.query);
     res.status(200).send();
-    var name = '/home/pi/art/' +  req.query.lang + '/' + req.query.font + '/' + req.query.sel + '/' + req.query.verse + '.jpg';
+//    var name = '/home/pi/art/' +  req.query.lang + '/' + req.query.font + '/' + req.query.verse + '/' + req.query.sel + '.jpg';
+    var name = '/home/pi/art/' +  req.query.lang + '/' + req.query.verse + '/' + req.query.font + '/' + req.query.sel + '.jpg';
     var fileName = path.resolve(name);
     fs.readFile(fileName, function(err, data){
         if(err){
